@@ -56,13 +56,12 @@ npx prisma generate
 
 ### 6. Running Server
 
-## Mode Development
+- Mode Development
 
 ```bash
 npm run dev
 ```
-
-## Mode Production
+- Mode Production
 
 ```bash
 npm run start
