@@ -24,6 +24,46 @@ Fungsinya untuk:
 ### 1. Clone Repository
 
 ```bash
-git clone <URL_REPOSITORY_ANDA>
-cd <NAMA_FOLDER_PROYEK>/user-service
+git clone https://github.com/ihsanmarseno/user-service.git
+cd /user-service
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Setup Environment Variables
+
+```bash
+DATABASE_URL="mysql://root:@localhost:3306/wfh_db"
+JWT_SECRET="GANTI_DENGAN_KUNCI_RAHASIA_YANG_SANGAT_AMAN"
+PORT=5001
+```
+
+### 4. Running Migrasi Prisma
+
+```bash
+npx prisma migrate dev
+```
+
+### 5. Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+### 6. Running Server
+
+## Mode Development
+
+```bash
+npm run dev
+```
+
+## Mode Production
+
+```bash
+npm run start
 ```
