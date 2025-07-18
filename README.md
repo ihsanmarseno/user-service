@@ -37,8 +37,8 @@ npm install
 ### 3. Setup Environment Variables
 
 ```bash
-DATABASE_URL="mysql://root:@localhost:3306/wfh_db"
-JWT_SECRET="GANTI_DENGAN_KUNCI_RAHASIA_YANG_SANGAT_AMAN"
+DATABASE_URL="mysql://root:@localhost:3306/auth-service"
+JWT_SECRET="JWTSECRETDUMMY"
 PORT=5001
 ```
 

@@ -27,9 +27,12 @@ export const login = async (req, res) => {
     const { password: _, ...userWithoutPassword } = user;
 
     res.json({
-      msg: "Login berhasil",
-      token,
-      user: userWithoutPassword,
+      success: true,
+      message: "Login berhasil",
+      data: {
+        user: userWithoutPassword,
+        token,
+      },
     });
   } catch (error) {
     res.status(500).json({ msg: error.message });

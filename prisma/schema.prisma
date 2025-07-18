@@ -24,8 +24,8 @@ model User {
   email     String   @unique
   password  String
   role      Role     @default(employee)
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
+  createdAt DateTime @default(now()) 
+  updatedAt DateTime @updatedAt 
 
   @@map("users")
 }

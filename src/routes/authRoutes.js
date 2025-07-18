@@ -4,6 +4,7 @@ import {
   getAllUsers,
   updateUser,
   deleteUser,
+  getUserById,
 } from "../controllers/userController.js";
 import { verifyToken, isAdmin } from "../middleware/authMiddleware.js";
 
@@ -15,6 +16,7 @@ router.post("/login", login);
 // Rute hanya untuk Admin
 router.post("/users", verifyToken, isAdmin, createUser);
 router.get("/users", verifyToken, isAdmin, getAllUsers);
+router.get("/users/:id", verifyToken, isAdmin, getUserById);
 router.put("/users/:id", verifyToken, isAdmin, updateUser);
 router.delete("/users/:id", verifyToken, isAdmin, deleteUser);
 
