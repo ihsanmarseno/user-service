@@ -1,5 +1,6 @@
 # User & Authentication Service 🔑
 
+![alt text](image.png)
 Service ini merupakan bagian dari arsitektur **microservices** untuk aplikasi **Absensi WFH**.  
 Fungsinya untuk:
 
