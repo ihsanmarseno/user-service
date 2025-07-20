@@ -16,6 +16,7 @@ export const getAllUsers = async (req, res) => {
           role: true,
           createdAt: true,
         },
+        where: { role: "employee" },
         orderBy: { createdAt: "desc" },
         skip,
         take: pageSize,
